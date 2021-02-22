@@ -1,0 +1,189 @@
+<html>
+<body>
+<style>
+
+    .out{
+        position: absolute;
+        overflow: hidden;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        width: 240px;
+        height: 240px;
+    }
+    .out :nth-child(n+2){
+        margin-top:-4px
+    }
+    .block{
+        display:inline-block;
+        width: 30px;
+        height: 30px;
+        margin-right:-4px;
+    }
+    .black{
+        background-color: #745853;
+    }
+    .white{
+        background-color: #f4cd8d;
+    }
+    .out input{
+        position: absolute;
+        left: -9999px;
+    }
+    label {
+        width: 30px;
+        height: 30px;
+        display: block;
+        cursor: pointer;
+        position: relative;
+        top: 4px;
+    }
+    input:checked + label {
+        background-color: #ff0000;
+    }
+    input:checked + label > .inner_div{
+        width:30px;
+        height:30px;
+        left:60px;
+        top:30px;
+    }
+    input:checked + label > .inner_div2{
+        width:30px;
+        height:30px;
+        left:60px;
+        top:-26px;
+    }
+    input:checked + label > .inner_div3{
+        width:30px;
+        height:30px;
+        left:-60px;
+        top:34px;
+    }
+    input:checked + label > .inner_div4{
+        width:30px;
+        height:30px;
+        left:-60px;
+        top:-26px;
+    }
+    input:checked + label > .inner_div5{
+        width:30px;
+        height:30px;
+        left:30px;
+        top:64px;
+    }
+    input:checked + label > .inner_div6{
+        width:30px;
+        height:30px;
+        left:-30px;
+        top:64px;
+    }
+    input:checked + label > .inner_div7{
+        width:30px;
+        height:30px;
+        left:30px;
+        top:-56px;
+    }
+    input:checked + label > .inner_div8{
+        width:30px;
+        height:30px;
+        left:-30px;
+        top:-56px;
+    }
+    input:not(:checked) + label {
+        background:none;
+    }
+    .inner_div, .inner_div2, .inner_div3, .inner_div4, .inner_div5, .inner_div6, .inner_div7, .inner_div8 {
+        background-color: #0000ff;
+        position:absolute;
+    }
+    input:not(:checked) + label > .inner_div, .inner_div2, .inner_div3, .inner_div4, .inner_div5, .inner_div6, .inner_div7, .inner_div8 {
+        width:0;
+        height:0;
+    }
+</style>
+<form>
+    <div class="out">
+        <div class="line">
+            <div class="white block"><input type="radio" name="groupe1" id="1"/><label for="1"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="2"/><label for="2"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="3"/><label for="3"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="4"/><label for="4"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="5"/><label for="5"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="6"/><label for="6"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="7"/><label for="7"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="8"/><label for="8"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line2">
+            <div class="black block"><input type="radio" name="groupe1" id="9"/><label for="9"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="10"/><label for="10"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="11"/><label for="11"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="12"/><label for="12"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="13"/><label for="13"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="14"/><label for="14"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="15"/><label for="15"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="16"/><label for="16"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line3">
+            <div class="white block"><input type="radio" name="groupe1" id="17"/><label for="17"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="18"/><label for="18"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="19"/><label for="19"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="20"/><label for="20"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="21"/><label for="21"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="22"/><label for="22"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="23"/><label for="23"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="24"/><label for="24"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line4">
+            <div class="black block"><input type="radio" name="groupe1" id="25"/><label for="25"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="26"/><label for="26"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="27"/><label for="27"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="28"/><label for="28"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="29"/><label for="29"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="30"/><label for="30"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="31"/><label for="31"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="32"/><label for="32"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line5">
+            <div class="white block"><input type="radio" name="groupe1" id="33"/><label for="33"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="34"/><label for="34"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="35"/><label for="35"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="36"/><label for="36"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="37"/><label for="37"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="38"/><label for="38"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="39"/><label for="39"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="40"/><label for="40"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line6">
+            <div class="black block"><input type="radio" name="groupe1" id="41"/><label for="41"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="42"/><label for="42"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="43"/><label for="43"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="44"/><label for="44"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="45"/><label for="45"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="46"/><label for="46"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="47"/><label for="47"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="48"/><label for="48"></label><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></div>
+        </div>
+        <div class="line" id="line7">
+            <div class="white block"><input type="radio" name="groupe1" id="49"/><label for="49"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="50"/><label for="50"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="51"/><label for="51"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="52"/><label for="52"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="53"/><label for="53"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="54"/><label for="54"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="55"/><label for="55"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="56"/><label for="56"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+        <div class="line" id="line8">
+            <div class="black block"><input type="radio" name="groupe1" id="57"/><label for="57"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="58"/><label for="58"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="59"/><label for="59"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="60"/><label for="60"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="61"/><label for="61"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="62"/><label for="62"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="black block"><input type="radio" name="groupe1" id="63"/><label for="63"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+            <div class="white block"><input type="radio" name="groupe1" id="64"/><label for="64"><div class="inner_div"></div><div class="inner_div2"></div><div class="inner_div3"></div><div class="inner_div4"></div><div class="inner_div5"></div><div class="inner_div6"></div><div class="inner_div7"></div><div class="inner_div8"></div></label></div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
