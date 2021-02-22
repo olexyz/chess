@@ -20,7 +20,7 @@ html-документ, при загрузке которого рисуется
 
 Пример
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/statement-image.png?raw=true)
+![alt text](https://raw.githubusercontent.com/olexyz/chess/master/statement-image.png)
 
 Примечания
 
